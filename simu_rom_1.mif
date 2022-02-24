@@ -1,0 +1,47 @@
+-- Simulated CCD frames of Delta-Cam
+-- Format for each word is (MSB to LSB):
+--  * pixel even segment 0 axis A 
+--  * pixel odd segment 0 axis A
+--  * pixel even segment 1 axis A 
+--  * pixel odd segment 1 axis A
+--  * pixel even segment 0 axis B 
+--  * pixel odd segment 0 axis B
+--  * pixel even segment 1 axis B 
+--  * pixel odd segment 1 axis B
+--  * pixel even segment 0 axis C
+--  * pixel odd segment 0 axis C
+--  * pixel even segment 1 axis C 
+--  * pixel odd segment 1 axis C
+
+
+WIDTH=12;
+DEPTH=128;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+0 : 000000000000;
+1 : 000000100011;
+[2..3]: 000000000000;
+4: 010000000000;
+5: 110000000000;
+[6..7]: 000000000000;
+8: 001100000000;
+9: 001000000000;
+[10..12]: 000000000000;
+13: 000001000000;
+14: 000011000000;
+15: 000010000000;
+[16..18]: 000000000000;
+19: 010000000000;
+[20..21]: 000000000000;
+22: 001100000000;
+[23..24]: 000000000000;
+25: 000010000000;
+26: 000011000000;
+27: 000010000000;
+[28..62]: 000000000000;
+63: 110001000000;
+[64..127]: 000000000000;
+END;

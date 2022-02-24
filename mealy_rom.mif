@@ -1,0 +1,51 @@
+-- Mealy machine for process 1 of DeltaCam
+-- address in (from MSB to LSB):
+--   * current state (3 bits)
+--   * even pixel state (1 bit)
+--   * odd pixel state (1 bit)
+-- data out (from MSB to LSB):
+--   * new state (3 bits)
+--   * suffix of word sent to process 2 (4 bits)
+--   * write enable flag (1 bit)  
+
+
+WIDTH=8;
+DEPTH=32;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+0: 00000000;
+1: 11101011;
+2: 00111101;
+3: 10010101;
+4: 00000000;
+5: 11101011;
+6: 00111101;
+7: 10010101;
+8: 00000000;
+9: 11101011;
+10: 00111101;
+11: 10010101;
+12: 00000000;
+13: 11101011;
+14: 00111101;
+15: 10010101;
+16: 01010001;
+17: 11011011;
+18: 01101001;
+19: 10100000;
+20: 01010001;
+21: 11011011;
+22: 01101001;
+23: 10100000;
+24: 01010001;
+25: 11011011;
+26: 01101001;
+27: 10100000;
+28: 01010001;
+29: 11011011;
+30: 01101001;
+31: 10100000;
+END;
