@@ -1,4 +1,5 @@
 -- 6-bit counter for process 1 (Mealy machine) of DeltaCam 
+-- By S. Morel, Zthorus-Labs
 
 library ieee;
 use ieee.std_logic_1164.all;

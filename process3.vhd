@@ -1,4 +1,6 @@
 -- Process #3 of DeltaCam electronics
+-- By S. Morel, Zthorus-Labs
+
 -- This process takes the A,B,C coordinates from the RAMs
 -- and finds out the triplets corresponding to a photo-event
 -- (by calculating the sum A+B+C). The valid (A,B-C) coordinates are

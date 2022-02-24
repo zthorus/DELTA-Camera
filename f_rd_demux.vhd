@@ -1,5 +1,6 @@
 -- Demux for the read-enable signals of the FIFOs (between the 1st and 2nd processes of Delta-Cam)
 -- One demux per axis (= per 2nd-process instance)
+-- By S. Morel, Zthorus-Labs
 
 library ieee;
 use ieee.std_logic_1164.all;

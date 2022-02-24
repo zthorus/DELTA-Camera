@@ -1,5 +1,6 @@
 -- Muxltiplexer for the read data of the RAMs (between the 2nd and 3rd processes of Delta-Cam) 
 -- One mux per axis
+-- By S. Morel, Zthorus-Labs
 
 library ieee;
 use ieee.std_logic_1164.all;

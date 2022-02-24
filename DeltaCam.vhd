@@ -1,11 +1,13 @@
 -- DELTA-camera control electronics (feasibility demonstration)
+-- By S. Morel, Zthorus-Labs
+
 -- This device takes the binarized output of the three TH7809A linear CCDs
 -- (on which the photo-events are projected on axes A, B and C) and calculates
 -- the coordinates of the photo-events
 
 -- This implementation simulates the hypothetic case in which the linear CCDs
--- have 2 segments (instead of 8), still consisting of 128 pixels with even and
--- odd pixels read in parallel. 
+-- have 2 segments (instead of 8), still consisting of 128 pixels each, 
+-- with even and odd pixels read in parallel. 
 
 -- The CCD frames are simulated by a ROM containing the data
 

@@ -1,4 +1,6 @@
 -- Process #2 of DeltaCam electronics
+-- By S. Morel, Zthorus-Labs
+
 -- This process (one instance for each axis) takes the pre-centering data from the FIFOs,
 -- calculates the photo-event projection coordinates and writes them in RAM.
 -- The joining of photo-event projections overlapping two segments is done by this process

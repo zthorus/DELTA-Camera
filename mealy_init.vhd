@@ -1,4 +1,6 @@
 -- Component to initialize Mealy machine (set state=0 on request, current state otherwise) 
+-- of the Delta camera
+-- By S. Morel, Zthorus-Labs
 
 library ieee;
 use ieee.std_logic_1164.all;
