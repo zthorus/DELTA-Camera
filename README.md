@@ -1,7 +1,7 @@
 # DELTA-Camera
 Digital electronics of the DELTA photon-counting camera
 
-The DELTA (Detection of Events of Light by Three Axes) is a concept of photon-counting camera (originally designed for astrophysics using speckle-interferometry and long-baseline interferometry in the visible spectrum). It uses three fast-readout linear CCDs (Thomson TH7809A), on which the spots of photo-events (coming out from a stack of image-intensifiers) is projected. A challenge of such an instrument is to process in real-time the digitized signals from the CCDs to recover the (x,y) coordinates of the photo-events. When the DELTA camera was designed at the end of the 1990s, this would have required a complex digital electronics, but progress in the development of FPGAs over the last 20 years have made the digital electronics fully implementable now on an FPGA available at very low price, like the Altera MAX10 in its 10M08 version.
+The DELTA (Detection of Events of Light by Three Axes) is a concept of photon-counting camera (originally designed for astrophysics using speckle-interferometry and long-baseline interferometry in the visible spectrum). It uses three fast-readout linear CCDs (Thomson TH7809A), on which the spots of photo-events (coming out from a stack of image-intensifiers) is projected. A challenge of such an instrument is to process in real-time the digitized signals from the CCDs to recover the (x,y) coordinates of the photo-events. When the DELTA camera was designed at the end of the 1990s, this would have required a complex digital electronics, but progress in the development of FPGAs over the last 20 years have made the digital electronics fully implementable now on an FPGA available at very low price, like the Altera MAX10 in its 10M08 version. The current version of this digital electronics only requires 720 logical elements and 6912 bits of on-chip memory.
 
 This repository contains the VHDL code for a possible implementation of the DELTA-Camera digital electronics, in a simplified version (for demonstration purpose) that considers linear CCDs with 2 segments of pixels (128 pixels in each segment) instead of 8 segments (case of the TH7809A CCDs that have been considered for the DELTA-Camera). The CCD segments are read in parallel by pairs of even/odd pixels for each segment. This VHDL code contains a simulator of digitized (1 bit/pixel) CCD frames of the three axes that are stored in a ROM. This simulator also provides the "new frame" pulses and the clocks.
 
@@ -15,5 +15,5 @@ In this code, "DeltaCam.vhd" is the top-level entity that is equivalent to a "vi
 
 References:
 * S. Morel, L. Koechlin, "The DELTA photon counting camera concept", Astronomy & Astrophysics Supplement Series, vol. 130, pp. 395-401 (1998). 
-* S. Morel. PhD dissertation (in french), available at: https://tel.archives-ouvertes.fr/tel-01053919
+* S. Morel. PhD dissertation (in french), available at: https://tel.archives-ouvertes.fr/tel-01053919 (see pages 79 to 94).
 
