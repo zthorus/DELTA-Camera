@@ -14,6 +14,8 @@ The interface between Process-1 and Process-2 consists of two banks of FIFOs. Wh
 
 In this code, "DeltaCam.vhd" is the top-level entity that is equivalent to a "virtual printed circuit board" grouping all the needed components of the DELTA-Camera digital electronics. The current implementation does not feature "Process-4" which would consist of a look-up table stored in ROM to scale down the resolved y-coordinates. Also, the timestamping of the detected photo-events is not implemented yet.
 
+The repository also includes a C program "frame_simu.c" that generates a ROM-content file (mif) of simulated CCD frames from given photo-event (x,y) coordinates.
+
 References:
 * S. Morel, L. Koechlin, "The DELTA photon counting camera concept", Astronomy & Astrophysics Supplement Series, vol. 130, pp. 395-401 (1998). 
 * S. Morel. PhD dissertation (in french), available at: https://tel.archives-ouvertes.fr/tel-01053919 (see pages 79 to 94).
